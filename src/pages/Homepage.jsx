@@ -2,12 +2,14 @@ import Default from '../layouts/Default'
 import Card from '../components/Card'
 import Textbox from '../components/Textbox'
 import testImage from '../assets/test.png'
+import FirstBackground from '../backgrounds/FirstBackground'
 import Placeholdercat from '../assets/placeholdercat.png'
 
 function Homepage(){
 
     return(
         <>
+            <FirstBackground/>
             <Default>
                 <Card 
                     title="Hey guys! This is my homepage for now..." 

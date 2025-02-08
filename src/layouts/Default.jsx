@@ -5,9 +5,8 @@ function Default(props){
 
     return(
         <>
-            <div className="flex bg-gray-800 w-[70vw] opacity-80 flex-col">
+            <div className="flex bg-neutral-950 w-[70vw] opacity-99 flex-col border-l-1 border-r-1 border-neutral-900">
                 <Navbar />
-                <Separator />
                 <div>{props.children}</div>
             </div>
         </>
