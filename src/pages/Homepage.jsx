@@ -9,7 +9,6 @@ function Homepage(){
 
     return(
         <>
-            <FirstBackground/>
             <Default>
                 <Card 
                     title="Hey guys! This is my homepage for now..." 

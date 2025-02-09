@@ -66,7 +66,7 @@ function FirstBackground(){
         return () => {
             cancelAnimationFrame(playAnimation);
         }
-    })
+    }, [])
 
     return(
         <>
