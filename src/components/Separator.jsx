@@ -1,7 +1,7 @@
 function Separator(){
     return(
         <>
-            <div className="border-t-1 border-teal-700">
+            <div className="w-full h-10">
             </div>
         </>
     )

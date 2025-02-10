@@ -8,7 +8,7 @@ function Navbar(props){
 
     return(
         <>
-            <nav className="flex w-full justify-around items-center text-s h-16">
+            <nav className="flex w-full justify-around items-center text-s h-16 mb-3">
                 <NavLink to="/">
                     <div className={`text-center text-xl hover:cursor-pointer ${location.pathname == "/" ? "text-teal-700" : ""}`}>
                         <p>Home</p>
