@@ -11,12 +11,12 @@ function Homepage(){
     return(
         <>
             <Default>
-                <Card
-                    title="Hey guys! This is my homepage for now..." 
-                    paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <Card title="Hey guys! This is my homepage for now..." image={testImage}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Nobis nisi eum magnam quos repudiandae. 
                                 Rerum est expedita maxime ea, accusamus cum distinctio, vel perferendis cupiditate ut debitis. 
-                                Perspiciatis, iusto inventore." image={testImage} />
+                                Perspiciatis, iusto inventore.
+                </Card>
                 <Separator/>
                 <Textbox>
                     This website is in HEAVY maintenance. Any solid advice you can give is appreciated (really.)

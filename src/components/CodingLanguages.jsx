@@ -11,7 +11,7 @@ function CodingLanguages(){
     const [hoveredLang, setHoveredLang] = useState(null);
 
     const langDesc = {
-        "React": {desc: "Bruh", img: ReactImg},
+        "React": {desc: "I'm too lazy to name them all", img: ReactImg},
         "Tailwind": {desc: "Bruh2", img: TailwindImg},
         "Python": {desc: "Bruh3", img: PythonImg},
         "C": {desc: "Bruh4", img: CImg},
@@ -37,12 +37,13 @@ function CodingLanguages(){
                     <motion.img onMouseEnter={() => {setHoveredLang("Java")}} onMouseLeave={() => {setHoveredLang(null)}} src={JavaImg} className="w-14" whileHover={{ scale: 1.3 }}></motion.img>
                 </div>
             </div>
-            {hoveredLang != null &&
-            <motion.div>
-                <Card title={hoveredLang} image={langDesc[hoveredLang].img} paragraph={langDesc[hoveredLang].desc}>
-
+            {hoveredLang != null && (
+            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{ease: "easeOut"}}>
+                <Card title={hoveredLang} image={langDesc[hoveredLang].img}>
+                    {langDesc[hoveredLang].desc}
                 </Card>
-            </motion.div>}
+            </motion.div>
+        )}
         </>
     )
 }
